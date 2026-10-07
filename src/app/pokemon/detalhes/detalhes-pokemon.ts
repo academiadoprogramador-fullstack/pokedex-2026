@@ -81,7 +81,7 @@ function paraDetalhesViewModel(dto: PokemonDetails): PokemonDetailsViewModel {
     abilities: dto.abilities.map((name) => ({ name: name, displayName: paraTitleCase(name) })),
     stats: dto.stats.map(({ name, baseValue }) => ({
       name: name,
-      displayName: paraTitleCase(name),
+      displayName: paraNomeEstatistica(name),
       value: baseValue,
       percentage: obterPercentualEstatistica(baseValue),
     })),
