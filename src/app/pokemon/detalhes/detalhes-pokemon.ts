@@ -1,7 +1,9 @@
+import { map, switchMap } from 'rxjs';
+
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import { map, switchMap } from 'rxjs';
+
 import { PokemonService } from '../data/pokemon.service';
 import { PokemonDetails, PokemonTypeViewModel } from '../pokemon.model';
 import { paraTiposViewModel, paraTitleCase } from '../pokemon.util';
